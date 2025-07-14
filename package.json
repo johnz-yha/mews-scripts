@@ -1,0 +1,35 @@
+{
+	"name": "mews-eod-bun",
+	"module": "src/index.ts",
+	"type": "module",
+	"scripts": {
+		"start": "bun start:dev",
+		"start:prod": "NODE_ENV=production bun run ./src/index.ts",
+		"start:dev": "NODE_ENV=development bun run ./src/index.ts",
+		"debug": "NODE_ENV=production bun --inspect ./src/index.ts",
+		"clean": "rm -rf ./cache",
+		"compile": "NODE_ENV=production bun build --minify --sourcemap --compile ./src/index.ts --outfile ./dist/mews-eod",
+		"compile:linux": "NODE_ENV=production bun build --minify --sourcemap --compile ./src/index.ts --target=bun-linux --outfile ./dist/mews-eod--linux-x64",
+		"compile:windows-modern": "NODE_ENV=production bun build --minify --sourcemap --compile ./src/index.ts --target=bun-windows-x64-modern --outfile ./dist/mews-eod--winx64-modern",
+		"compile:windows-baseline": "NODE_ENV=production bun build --minify --sourcemap --compile ./src/index.ts --target=bun-windows-x64-baseline --outfile ./dist/mews-eod--winx64-baseline",
+		"compile:macos": "NODE_ENV=production bun build --minify --sourcemap --compile ./src/index.ts --target=bun-darwin-x64 --outfile ./dist/mews-eod--darwin-x64",
+		"compile:macos-arm64": "NODE_ENV=production bun build --minify --sourcemap --compile ./src/index.ts --target=bun-darwin-arm64 --outfile ./dist/mews-eod--darwin-arm64",
+		"compile:all": "bun compile && bun compile:linux && bun compile:windows-modern && bun compile:windows-baseline && bun compile:macos && bun compile:macos-arm64"
+	},
+	"devDependencies": {
+		"@hey-api/openapi-ts": "^0.43.2",
+		"@types/bun": "latest",
+		"@types/lodash": "^4.17.1",
+		"typescript": "^5.0.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@types/papaparse": "^5.3.14",
+		"date-fns": "^4.1.0",
+		"date-fns-tz": "^3.1.3",
+		"lodash": "^4.17.21",
+		"papaparse": "^5.4.1"
+	}
+}
