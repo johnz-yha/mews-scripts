@@ -3,6 +3,7 @@
 output/*
 input/*
 
+local.settings.json
 
 .env.*
 .env
