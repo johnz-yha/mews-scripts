@@ -1,6 +1,7 @@
 // Entry point
 
 import { EnterprisesService } from "./client";
+import "./init";
 
 console.log("Environment: ", process.env.NODE_ENV);
 console.log("Entry point: example script... in ./src/index.ts");
