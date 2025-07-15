@@ -3,13 +3,13 @@ import type {
 	Service,
 	ServiceAvailabilityResultV20240122,
 } from "../client";
-import { getAllResourceCategories } from "../services/resourceCategories";
-import { getAllResourceCategoryAssignments } from "../services/resourceCategoryAssignments";
+import { getAllResourceCategories } from "../scripts/export-scripts/resourceCategories";
+import { getAllResourceCategoryAssignments } from "../scripts/export-scripts/resourceCategoryAssignments";
 import {
 	aggregateMetrics,
 	getServiceAvailability,
-} from "../services/serviceAvailability";
-import { getAllServices } from "../services/services";
+} from "../scripts/export-scripts/serviceAvailability";
+import { getAllServices } from "../scripts/export-scripts/services";
 import type {
 	AvailabilityAugmented,
 	AvailabilityOccupancyStats,

@@ -2,6 +2,7 @@
 	"name": "mews-eod-bun",
 	"module": "src/index.ts",
 	"type": "module",
+	"author": "John Zambrano <john.zambrano@yha.com.au>",
 	"scripts": {
 		"start": "bun start:dev",
 		"start:prod": "NODE_ENV=production bun run ./src/index.ts",

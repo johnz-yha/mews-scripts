@@ -1,4 +1,8 @@
+// Optional: Import this file in the main entry point of your program to add basic logging to all requests
+
 import { OpenAPI } from "./client";
+
+OpenAPI.BASE = process.env.MEWS_API_URL!;
 
 OpenAPI.interceptors.request.use((request) => {
 	return request;

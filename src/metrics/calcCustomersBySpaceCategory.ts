@@ -7,8 +7,8 @@ import type {
 	ResourceCategoryAssignment,
 	Service,
 } from "../client";
-import { getAllReservations } from "../services/reservations";
-import { getLastTimeUnitStartUtc } from "../services/serviceAvailability";
+import { getAllReservations } from "../scripts/export-scripts/reservations";
+import { getLastTimeUnitStartUtc } from "../scripts/export-scripts/serviceAvailability";
 import { type CustomerCounts } from "../types";
 import { convertToLocalTime, parseMewsOffset } from "../utils/utils";
 import { withCache } from "../utils/withCache";

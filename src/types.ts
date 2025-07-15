@@ -1,3 +1,5 @@
+// Some custom types to define data structures for type safety.
+
 import type {
 	ResourceAvailabilityMetricTypeEnum,
 	ResourceCategory,
