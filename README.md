@@ -1,4 +1,4 @@
-# mews-eod-bun
+# mews-scripts
 
 To install dependencies:
 
