@@ -1,8 +1,9 @@
 {
-	"name": "mews-eod-bun",
+	"name": "mews-scripts",
 	"module": "src/index.ts",
 	"type": "module",
 	"author": "John Zambrano <john.zambrano@yha.com.au>",
+	"description": "A collection of scripts for interacting with the MEWS API and an example repo for using the MEWS API with typescript and Bun.js runtime.",
 	"scripts": {
 		"start": "bun start:dev",
 		"start:prod": "NODE_ENV=production bun run ./src/index.ts",
