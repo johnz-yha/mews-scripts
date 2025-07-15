@@ -2,6 +2,7 @@
 
 import { OpenAPI } from "./client";
 
+// Override the default base URL with the correct demo or prod URL based on the environment.
 OpenAPI.BASE = process.env.MEWS_API_URL!;
 
 OpenAPI.interceptors.request.use((request) => {

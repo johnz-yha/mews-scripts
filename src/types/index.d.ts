@@ -4,7 +4,7 @@ import type {
 	ResourceAvailabilityMetricTypeEnum,
 	ResourceCategory,
 	ResourceCategoryAvailabilityV20240122,
-} from "./client";
+} from "../client";
 
 export interface OrderItemT {
 	AccountingCategoryId?: string;
